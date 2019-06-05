@@ -1,0 +1,583 @@
+body
+  font-family: 'Rubik', sans-serif
+  box-sizing: border-box
+  //background-color: #e9e9e9
+
+.container-fluid
+  max-width: 1200px
+
+//Header
+.header
+  display: flex
+  padding: 20px 0
+.wrap
+  display: flex
+  align-items: center
+
+.logo
+  display: block
+  background-image: url("../img/logo.png")
+  background-repeat: no-repeat
+  background-size: contain
+  height: 50px
+  span
+    text-transform: uppercase
+    font-weight: 400
+    font-style: italic
+    font-size: 36px
+    line-height: 50px
+    color: #BC0F11
+    padding-left: 50px
+    margin-right: 100px
+.nav-menu
+  width: 100%
+  ul
+    margin: 0
+    padding: 0
+  li
+    list-style: none
+  a
+    text-decoration: none
+    color: #615f5f
+    text-transform: uppercase
+    letter-spacing: 3px
+    transition: .3s ease-in-out
+    &:hover
+      color: black
+.menu
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+//Picture
+.picture-bg
+  background-image: url("../img/header-bg.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  height: calc(100vh - 466px)
+  position: relative
+  a
+    text-decoration: none
+    color: #fff
+    text-transform: uppercase
+    font-size: 30px
+  .button
+    width: 320px
+    position: absolute
+    bottom: 50px
+    left: 0
+    right: 0
+    margin: 0 auto
+    background-color: transparent
+    border: 1px solid #fff
+    border-radius: 50px
+    padding: 20px 0
+    transition: .3s ease-in-out
+    &:hover
+      background-color: #A36F1B
+      border: 1px solid #A36F1B
+//Advantages
+.advantages
+  padding: 50px 0
+  color: #385277
+  h1
+    font-size: 40px
+    font-weight: 400
+    text-align: center
+    letter-spacing: 5px
+  h2
+    font-size: 26px
+    font-weight: 300
+    text-align: center
+    margin-top: 20px
+
+.icon-advantages
+  width: 100px
+  display: block
+  margin: 70px auto 20px
+
+//Head-line for all sections
+.head-line
+  .line
+    position: relative
+    padding: 0 50px
+    margin-bottom: 100px
+    h2
+      text-transform: uppercase
+      font-size: 26px
+      font-weight: 700
+      letter-spacing: 15px
+      color: #615f5f
+      text-align: center
+      span
+        background-color: white
+        padding: 0 30px
+    .hr
+      display: block
+      width: 500px
+      height: 2px
+      background-color: #A36F1B
+      position: absolute
+      top: 15px
+      left: 0
+      right: 0
+      margin: 0 auto
+      z-index: -1
+
+//Rooms
+.rooms
+  position: relative
+  padding: 20px 0 250px
+  .room-description
+    a
+      text-transform: uppercase
+      text-align: center
+      font-size: 20px
+      color: #A36F1B
+      display: block
+      text-decoration: none
+      span
+        text-transform: none
+    p
+      margin-bottom: 30px
+      color: #615f5f
+    &:before
+      content: ''
+      width: 950px
+      height: 500px
+      display: block
+      border: 1px solid #ddd
+      position: absolute
+      right: 0
+      top: -50px
+      z-index: -1
+
+.room-image
+  position: relative
+  margin-left: 50px
+  .room-image-item
+    width: 300px
+    height: 300px
+    padding: 10px
+    border: 1px solid #A36F1B
+    position: absolute
+    transition: .2s ease-in-out
+  .room-too-men
+    left: 250px
+    top: 65px
+    z-index: 3
+    background-color: white
+    .room-too-bg
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      background-image: url("../img/threeroom2.jpg")
+    &:hover
+      background-color: #f4ddb1
+  .room-three-men
+    top: 250px
+    left: 65px
+    z-index: 2
+    background-color: white
+    .room-three-bg
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      background-image: url("../img/fiveroom3.jpg")
+    &:hover
+      background-color: #f4ddb1
+      z-index: 5
+  .room-five-men
+    z-index: 1
+    background-color: white
+    .room-five-bg
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      background-image: url("../img/tooroomall1.jpg")
+    &:hover
+      background-color: #f4ddb1
+      z-index: 5
+
+//Description for all slider
+.sliders
+  .description
+    padding: 40px 15px
+    li
+      font-style: italic
+    h4
+      margin-bottom: 20px
+      text-align: center
+      span
+        color: #A36F1B
+        font-size: 36px
+        font-weight: 700
+        margin-bottom: 20px
+    a
+      text-decoration: none
+      font-size: 20px
+      color: #005cbf
+      text-transform: uppercase
+      text-align: center
+    .button
+      color: #A36F1B
+      background-color: white
+      padding: 20px 30px
+      border: 1px solid #A36F1B
+      border-radius: 50px
+      display: block
+      margin: 0 auto
+      max-width: 320px
+      transition: .3s ease-in-out
+      &:hover
+        background-color: #A36F1B
+        color: #fff
+//Sliders
+.sliders
+  .slider-photo
+    height: 500px
+    background-repeat: no-repeat
+    background-size: cover
+  .slider-header
+    display: block
+    h3
+      padding: 0 15px
+      text-transform: uppercase
+      color: #615f5f
+      font-size: 20px
+      margin-bottom: 40px
+  .slick-prev, .slick-next
+    background: white
+    border: 1px solid #A36F1B
+    top: 530px
+    width: 40px
+    height: 40px
+    &:before
+      color: #A36F1B
+      font-weight: 900
+  .slick-prev
+    margin-left: 310px
+    &:before
+      content: '<'
+  .slick-next
+    margin-right: 310px
+    &:before
+      content: '>'
+  .frame
+    &:after
+      content: ''
+      display: block
+      width: 640px
+      height: 570px
+      border: 1px solid #A36F1B
+      position: absolute
+      top: -20px
+      z-index: -1
+.too-men-rooms
+  padding: 20px 0 80px
+  .slider-too-men
+    .photo1
+      background-image: url("../img/tooroomall1.jpg")
+    .photo2
+      background-image: url("../img/tooroomall2.jpg")
+    .photo3
+      background-image: url("../img/tooroomtv.jpg")
+    .photo4
+      background-image: url("../img/tooroomtv.jpg")
+  .frame
+    &:after
+      content: ''
+      display: block
+      width: 640px
+      height: 570px
+      border: 1px solid #A36F1B
+      position: absolute
+      top: -20px
+
+.three-men-rooms
+  padding: 20px 0 80px
+  .slider-three-men
+    .photo1
+      background-image: url("../img/threeroom1.jpg")
+    .photo2
+      background-image: url("../img/threeroom2.jpg")
+    .photo3
+      background-image: url("../img/threeroom3.jpg")
+    .photo4
+      background-image: url("../img/threeroom4.jpg")
+    .photo5
+      background-image: url("../img/threeroom5.jpg")
+  .frame
+    &:after
+      content: ''
+      display: block
+      width: 640px
+      height: 570px
+      border: 1px solid #A36F1B
+      position: absolute
+      top: -20px
+      right: 0
+.five-men-rooms
+  padding: 20px 0 80px
+  .slider-five-men
+    .photo1
+      background-image: url("../img/fiveroom.jpg")
+    .photo2
+      background-image: url("../img/fiveroom2.jpg")
+    .photo3
+      background-image: url("../img/fiveroom3.jpg")
+    .photo4
+      background-image: url("../img/fiveroom4.jpg")
+
+
+
+//Rest-zone
+.rest-zone
+  position: relative
+  padding: 20px 0 450px
+  .description
+    h3
+      text-transform: uppercase
+      text-align: center
+      font-size: 20px
+      color: #A36F1B
+      span
+        text-transform: none
+    p
+      margin-bottom: 30px
+      color: #615f5f
+    &:before
+      content: ''
+      width: 950px
+      height: 500px
+      display: block
+      border: 1px solid #ddd
+      position: absolute
+      right: 0
+      top: -50px
+
+.zone-image
+  position: relative
+  margin-left: 50px
+  .zone-image-item
+    width: 300px
+    height: 300px
+    padding: 10px
+    border: 1px solid #A36F1B
+    position: absolute
+    transition: .2s ease-in-out
+  .zone1
+    width: 60%
+    left: 200px
+    top: 65px
+    z-index: 3
+    background-color: white
+    .zone1-bg
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      background-image: url("../img/restzone1.jpg")
+    &:hover
+      background-color: #f4ddb1
+  .zone2
+    width: 90%
+    top: 250px
+    left: 65px
+    z-index: 2
+    background-color: white
+    .zone2-bg
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      background-image: url("../img/restzoneall.jpg")
+    &:hover
+      background-color: #f4ddb1
+      z-index: 5
+  .zone3
+    z-index: 1
+    background-color: white
+    .zone3-bg
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-repeat: no-repeat
+      background-image: url("../img/mangal.jpg")
+    &:hover
+      background-color: #f4ddb1
+      z-index: 5
+
+//Beach
+.beach
+  position: relative
+  .slider-beach
+    height: 520px
+    .image-item
+      height: 500px
+      background-repeat: no-repeat
+      background-size: cover
+  .slider-nav
+    .image-item-prev
+      height: 230px
+      background-repeat: no-repeat
+      background-size: cover
+      margin-left: 7px
+      margin-right: 7px
+  .slider
+    .beach1
+      background-image: url("../img/beach1.jpg")
+    .beach2
+      background-image: url("../img/beach2.jpg")
+    .beach3
+      background-image: url("../img/beach3.jpg")
+    .beach4
+      background-image: url("../img/beach4.jpg")
+    .beach5
+      background-image: url("../img/beach5.jpg")
+    .beach6
+      background-image: url("../img/beach6.jpg")
+    .beach7
+      background-image: url("../img/beach7.jpg")
+    .beach8
+      background-image: url("../img/beach8.jpg")
+    .beach9
+      background-image: url("../img/beach9.jpg")
+    .beach10
+      background-image: url("../img/beach10.jpg")
+    .beach11
+      background-image: url("../img/beach11.jpg")
+    .beach12
+      background-image: url("../img/beach12.jpg")
+
+//Cafe
+.cafe
+  padding: 50px 0
+  .image-item
+    background-repeat: no-repeat
+    background-size: cover
+    height: 250px
+    width: 100%
+    margin-bottom: 30px
+  .photo1
+    background-image: url("../img/gril.jpg")
+  .photo2
+    background-image: url("../img/meat.jpg")
+  .photo3
+    background-image: url("../img/cafe.jpg")
+  .photo4
+    background-image: url("../img/cafe3.jpg")
+  .photo5
+    background-image: url("../img/cafe4.jpg")
+
+
+//About
+.about
+  padding: 50px 0
+  .photo-owner
+    float: left
+    width: 200px
+    height: 200px
+    border-radius: 50%
+    background-image: url("../img/owner.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    margin-right: 30px
+
+//Map
+.map
+  padding: 50px 0
+
+//Footer
+.footer
+  background-color: #7c7c7c
+  padding: 20px 0
+  .icon
+    height: 50px
+    padding-right: 30px
+  a
+    text-decoration: none
+    color: white
+    font-size: 30px
+
+
+//Button top
+.bottom_top
+  position: fixed
+  bottom: 70px
+  right: 40px
+  width: 60px
+  height: 60px
+  border-radius: 50%
+  border: 1px solid #A36F1B
+  background: #fff
+  z-index: 100
+  outline: 0!important
+  opacity: 0
+  transition: all .3s ease-in-out
+  &:hover
+    cursor: pointer
+    background-color: #A36F1B
+  &:after
+    content: '>'
+    font-size: 30px
+    color: #A36F1B
+    transform: rotate(-90deg)
+    position: absolute
+    top: -15px
+    left: 0
+    right: 0
+    margin: auto
+  &:hover:after
+    color: white
+
+
+//Modal
+.input-form
+  padding: 0 80px
+  .offset
+    margin-bottom: 10px
+  input
+    outline: none
+
+.modal
+  button
+    outline: none
+  .head-line
+    position: relative
+    hr
+      width: 520px
+      border: #A36F1B solid 1px
+    h2
+      text-transform: uppercase
+      font-size: 20px
+      font-weight: 700
+      letter-spacing: 15px
+      color: #615f5f
+      text-align: center
+      margin-top: -28px
+      margin-bottom: 20px
+      span
+        display: inline-block
+        padding: 0 20px
+        background-color: white
+  .button
+    margin-top: 20px
+    margin-bottom: 30px
+    .btn-all
+      text-transform: uppercase
+      padding: 10px 30px
+      border: 1px solid #A36F1B
+      border-radius: 30px
+      color: #A36F1B
+      background-color: #fff
+      cursor: pointer
+      transition: .3s ease-in-out
+      &:hover
+        color: #fff
+        background-color: #A36F1B
+
+
