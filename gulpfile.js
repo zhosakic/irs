@@ -22,7 +22,7 @@ gulp.task('sass', function () {
     return gulp.src('dev/sass/*.sass')              // берём любой файл из папки sass для обработки в css
         .pipe(sass().on('error', sass.logError))    // если есть ошибка в sass файле записываем и выводим её в лог
         .pipe(autoprefixer({
-            browsers: ['last 10 versions'],
+            browsers: ['last 7 versions'],
             cascade: false
         }))                                         // добавляем префиксы для кросбраузерности
         .pipe(csso())                               // минимизируем файл css
