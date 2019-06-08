@@ -369,7 +369,9 @@
                     <h2><span>Мы на карте</span></h2>
                     <div class="hr"></div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.5871460434005!2d74.93045753544351!3d46.795232121273386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x426f8d783fb70291%3A0x40b4a73f4eaf643a!2z0JfQvtC90LAg0L7RgtC00YvRhdCwICLQmNGA0YEi!5e1!3m2!1sru!2skz!4v1559558705133!5m2!1sru!2skz" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.5871460434005!2d74.93045753544351!3d46.795232121273386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x426f8d783fb70291%3A0x40b4a73f4eaf643a!2z0JfQvtC90LAg0L7RgtC00YvRhdCwICLQmNGA0YEi!5e1!3m2!1sru!2skz!4v1559558705133!5m2!1sru!2skz"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -386,7 +388,7 @@
 
 
     <!-- Modal send-->
-    <div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="ModalSendMessage" aria-hidden="true">
+    <div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="send" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <button type="button" class="close text-right mr-3 mt-3" data-dismiss="modal" aria-label="Close">
@@ -417,7 +419,7 @@
                     <h2><span>Заявка на бронь</span></h2>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="sendmail.php">
                         <div class="row input-form">
                             <div class="col-sm-6 col-12 w-100">Укажите дату заезда</div>
                             <div class="col-sm-6 col-12 w-100 offset">
