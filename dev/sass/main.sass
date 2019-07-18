@@ -48,12 +48,18 @@ body
   display: flex
   justify-content: space-between
 
+
+@media screen and (max-width: 800px)
+  .nav-menu
+    display: none
+
 //Picture
 .picture-bg
   background-image: url("../img/header-bg.jpg")
   background-size: cover
   background-repeat: no-repeat
   height: calc(100vh - 466px)
+  min-height: 300px
   position: relative
   a
     text-decoration: none
@@ -200,6 +206,23 @@ body
     &:hover
       background-color: #f4ddb1
       z-index: 5
+
+@media screen and (max-width: 1024px)
+  .room-image
+    .room-image-item
+      width: 270px
+      height: 270px
+
+@media screen and (max-width: 991px)
+  .rooms
+    .room-description
+      p
+        text-align: center
+      &:before
+        display: none
+  .room-image
+    display: none
+
 
 //Description for all slider
 .sliders
