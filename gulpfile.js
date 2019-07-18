@@ -32,6 +32,20 @@ gulp.task('sass', function () {
         }));
 });
 
+// gulp.task('autoprefixer', () => {
+//     const autoprefixer = require('autoprefixer')
+//     const sourcemaps = require('gulp-sourcemaps')
+//     const postcss = require('gulp-postcss')
+//
+//     return gulp.src('./src/*.css')
+//         .pipe(sourcemaps.init())
+//         .pipe(postcss([ autoprefixer() ]))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest('./dest'))
+// })
+
+
+
 gulp.task('html', function () {
    return gulp.src('dev/*.html')                          // перемещаем все файлы html в build
         .pipe(gulp.dest('build'))
