@@ -279,6 +279,41 @@ body
       &:hover
         background-color: #A36F1B
         color: #fff
+@media screen and (max-width: 1200px)
+  .sliders
+    .description
+      h4
+        font-size: 20px
+        span
+          //font-size: 20px
+@media screen and (max-width: 1024px)
+  .sliders
+    .description
+      height: auto
+      .price_button
+        margin-top: 50px
+        position: relative
+
+@media screen and (max-width: 768px)
+  .sliders
+    .frame-right
+      z-index: -1
+      &:after
+        border: none
+    .frame-left
+      z-index: -1
+      &:after
+        border: none
+    .description
+      margin-top: 60px
+@media screen and (max-width: 320px)
+  .sliders
+    .description
+      h4
+        font-size: 16px
+        span
+          font-size: 24px
+
 //Sliders
 .sliders
   .slider-photo
@@ -310,6 +345,43 @@ body
     margin-right: 310px
     &:before
       content: '>'
+@media screen and (max-width: 1200px)
+  .sliders
+    .slick-prev
+      margin-left: 250px
+    .slick-next
+      margin-right: 350px
+@media screen and (max-width: 1150px)
+  .sliders
+    .slick-prev
+      margin-left: 280px
+    .slick-next
+      margin-right: 250px
+@media screen and (max-width: 1024px)
+  .sliders
+    .slick-prev
+      margin-left: 290px
+    .slick-next
+      margin-right: 240px
+@media screen and (max-width: 768px)
+  .sliders
+    .slider-header
+      h3
+        margin-bottom: 20px
+  .sliders
+    .slick-prev
+      margin-left: 300px
+    .slick-next
+      margin-right: 300px
+@media screen and (max-width: 425px)
+  .sliders
+    .slick-prev
+      margin-left: 100px
+    .slick-next
+      margin-right: 100px
+
+
+
 
 .frame-left
   &:after
@@ -406,6 +478,10 @@ body
     background-image: url("../img/fiveroom5.jpg")
 
 
+
+@media screen and (max-width: 1024px)
+  .slider-block
+    padding: 20px 0 20px
 
 //Rest-zone
 .rest-zone
