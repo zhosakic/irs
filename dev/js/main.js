@@ -1,15 +1,21 @@
 // Slick slider Управление слайдерами
+$('.slider-home').slick({
+    infinite: true,
+});
+$('.slider-company').slick({
+    infinite: true,
+});
+$('.slider-too-men-economy').slick({
+    infinite: true,
+});
 $('.slider-too-men').slick({
     infinite: true,
-
 });
 $('.slider-three-men').slick({
     infinite: true,
-
 });
 $('.slider-five-men').slick({
     infinite: true,
-
 });
 
 $('.slider-beach').slick({

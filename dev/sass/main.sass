@@ -145,7 +145,7 @@ body
 //Rooms
 .rooms
   position: relative
-  padding: 20px 0 160px
+  padding: 20px 0 100px
   .room-description
     a
       text-transform: uppercase
@@ -240,7 +240,10 @@ body
 //Description for all slider
 .sliders
   .description
-    padding: 40px 15px
+    position: relative
+    height: 575px
+    overflow: hidden
+    padding: 0 15px 10px 15px
     li
       font-style: italic
     h4
@@ -250,22 +253,28 @@ body
         color: #A36F1B
         font-size: 36px
         font-weight: 700
-        margin-bottom: 20px
+        margin-bottom: 40px
     a
       text-decoration: none
       font-size: 20px
       color: #005cbf
       text-transform: uppercase
       text-align: center
+    .price_button
+      position: absolute
+      bottom: 25px
+      left: 0
+      right: 0
+      margin: 0 auto
     .button
       color: #A36F1B
       background-color: white
       padding: 20px 30px
       border: 1px solid #A36F1B
       border-radius: 50px
+      max-width: 320px
       display: block
       margin: 0 auto
-      max-width: 320px
       transition: .3s ease-in-out
       &:hover
         background-color: #A36F1B
@@ -307,10 +316,10 @@ body
     content: ''
     display: block
     width: 640px
-    height: 625px
+    height: 610px
     border: 1px solid #A36F1B
     position: absolute
-    top: -20px
+    top: -35px
     z-index: -1
 
 .frame-right
@@ -318,51 +327,83 @@ body
     content: ''
     display: block
     width: 640px
-    height: 625px
+    height: 610px
     border: 1px solid #A36F1B
     position: absolute
     right: 15px
-    top: -20px
+    top: -35px
     z-index: -1
 
-.too-men-rooms
+.slider-block
   padding: 20px 0 80px
-  .slider-too-men
-    .photo1
-      background-image: url("../img/tooroomall1.jpg")
-    .photo2
-      background-image: url("../img/tooroomall2.jpg")
-    .photo3
-      background-image: url("../img/tooroomtv.jpg")
-    .photo4
-      background-image: url("../img/tooroomconder.jpg")
+
+.slider-home
+  .photo1
+    background-image: url("../img/home_day.jpg")
+  .photo2
+    background-image: url("../img/home_room.jpg")
+  .photo3
+    background-image: url("../img/home_night.jpg")
+  .photo4
+    background-image: url("../img/home_tv.jpg")
+  .photo5
+    background-image: url("../img/home_outside.jpg")
+
+.slider-company
+  .photo1
+    background-image: url("../img/company1.jpeg")
+  .photo2
+    background-image: url("../img/company2.jpg")
+  .photo3
+    background-image: url("../img/company3.jpeg")
+
+.slider-too-men-economy
+  .photo1
+    background-image: url("../img/econom1.jpg")
+  .photo2
+    background-image: url("../img/econom2.jpg")
+  .photo3
+    background-image: url("../img/econom3.jpg")
+
+.slider-too-men
+  .photo1
+    background-image: url("../img/tooroomall1.jpg")
+  .photo2
+    background-image: url("../img/tooroomall2.jpg")
+  .photo3
+    background-image: url("../img/tooroomtv.jpg")
+  .photo4
+    background-image: url("../img/tooroomconder.jpg")
 
 
-.three-men-rooms
-  padding: 20px 0 80px
-  .slider-three-men
-    .photo1
-      background-image: url("../img/threeroom1.jpg")
-    .photo2
-      background-image: url("../img/threeroom2.jpg")
-    .photo3
-      background-image: url("../img/threeroom3.jpg")
-    .photo4
-      background-image: url("../img/threeroom4.jpg")
-    .photo5
-      background-image: url("../img/threeroom5.jpg")
 
-.five-men-rooms
-  padding: 20px 0 80px
-  .slider-five-men
-    .photo1
-      background-image: url("../img/fiveroom.jpg")
-    .photo2
-      background-image: url("../img/fiveroom2.jpg")
-    .photo3
-      background-image: url("../img/fiveroom3.jpg")
-    .photo4
-      background-image: url("../img/fiveroom4.jpg")
+.slider-three-men
+  .photo1
+    background-image: url("../img/threeroom1.jpg")
+  .photo2
+    background-image: url("../img/threeroom2.jpg")
+  .photo3
+    background-image: url("../img/threeroom3.jpg")
+  .photo4
+    background-image: url("../img/threeroom4.jpg")
+  .photo5
+    background-image: url("../img/threeroom5.jpg")
+  .photo6
+    background-image: url("../img/tooroomall4.jpg")
+
+
+
+.slider-five-men
+  .photo1
+    background-image: url("../img/fiveroom.jpg")
+  .photo2
+    background-image: url("../img/fiveroom2.jpg")
+  .photo3
+    background-image: url("../img/fiveroom3.jpg")
+  .photo4
+    background-image: url("../img/fiveroom4.jpg")
+  .photo5
+    background-image: url("../img/fiveroom5.jpg")
 
 
 
@@ -484,6 +525,10 @@ body
       background-image: url("../img/beach11.jpg")
     .beach12
       background-image: url("../img/beach12.jpg")
+    .beach13
+      background-image: url("../img/beach13.jpg")
+    .beach14
+      background-image: url("../img/beach14.jpg")
 
 //Cafe
 .cafe
@@ -509,6 +554,22 @@ body
   .photo5
     background-image: url("../img/cafe4.jpg")
 
+
+//BeerBar
+.beer-bar
+  padding: 50px 0
+  .image-item
+    background-repeat: no-repeat
+    background-size: cover
+    height: 350px
+    width: 100%
+    margin-bottom: 30px
+  .photo1
+    background-image: url("../img/beer_crane.jpeg")
+  .photo2
+    background-image: url("../img/general_form.jpg")
+  .photo3
+    background-image: url("../img/beer_ice.jpeg")
 
 //About
 .about
