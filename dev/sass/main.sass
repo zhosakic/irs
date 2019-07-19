@@ -284,8 +284,6 @@ body
     .description
       h4
         font-size: 20px
-        span
-          //font-size: 20px
 @media screen and (max-width: 1024px)
   .sliders
     .description
@@ -297,11 +295,9 @@ body
 @media screen and (max-width: 768px)
   .sliders
     .frame-right
-      z-index: -1
       &:after
         border: none
     .frame-left
-      z-index: -1
       &:after
         border: none
     .description
@@ -317,6 +313,7 @@ body
 //Sliders
 .sliders
   .slider-photo
+    width: 100%
     height: 500px
     background-repeat: no-repeat
     background-size: cover
@@ -334,6 +331,7 @@ body
     top: 530px
     width: 40px
     height: 40px
+    z-index: 10
     &:before
       color: #A36F1B
       font-weight: 900
@@ -365,10 +363,14 @@ body
       margin-right: 240px
 @media screen and (max-width: 768px)
   .sliders
+    .slider-photo
+      max-height: 500px
+      height: calc(100vw * 2/3)
+    .slick-prev, .slick-next
+      top: calc(100vw * 2/3 + 30px)
     .slider-header
       h3
         margin-bottom: 20px
-  .sliders
     .slick-prev
       margin-left: 300px
     .slick-next
