@@ -346,7 +346,7 @@
                     <div class="hr"></div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 zone-block">
                         <div class="zone-image">
                             <div class="zone1 zone-image-item">
                                 <div class="zone1-bg"></div>
@@ -441,25 +441,25 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-12">
                         <h3>Еда как дома</h3>
                         <p>У нас всегда свежая еда. Всё готовится исключительно перед подачей на стол, ничего не разогревается.</p>
                         <p>Вы можете заказать на выбор, что Вам сегодня приготовят наши повара</p>
                         <p class="halal">В нашем кафе вся еда из продуктов Халал</p>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="image-item photo1"></div>
+                    <div class="col-lg-3 col-6">
+                        <div class="image-item item-dish photo1"></div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="image-item photo2"></div>
+                    <div class="col-lg-3 col-6">
+                        <div class="image-item item-dish photo2"></div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-12">
                         <div class="image-item photo3"></div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-12">
                         <div class="image-item photo4"></div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-12">
                         <div class="image-item photo5"></div>
                     </div>
                 </div>
@@ -477,18 +477,20 @@
                         <p>На территории Вас ждет  отдельно расположенный  пивной бар, в котором  Вы можете укрыться от
                             палящего солнца, и где  Вас ждет свежее холодное пиво.</p>
                     </div>
-
-                    <div class="col-lg-3">
-                        <div class="image-item photo1"></div>
-                    </div>
+                </div>
+                <div class="row">
                     <div class="col-lg-6">
                         <div class="image-item photo2"></div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 order-lg-first col-6">
+                        <div class="image-item photo1"></div>
+                    </div>
+                    <div class="col-lg-3 col-6">
                         <div class="image-item photo3"></div>
                     </div>
                 </div>
             </div>
+
         </section>
         <section class="about head-line" id="about">
             <div class="container-fluid">
@@ -508,21 +510,25 @@
         </section>
         <section class="map head-line" id="map">
             <div class="container-fluid">
-                <div class="line">
-                    <h2><span>Мы на карте</span></h2>
-                    <div class="hr"></div>
-                </div>
-                <div class="col-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.5871460434005!2d74.93045753544351!3d46.795232121273386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x426f8d783fb70291%3A0x40b4a73f4eaf643a!2z0JfQvtC90LAg0L7RgtC00YvRhdCwICLQmNGA0YEi!5e1!3m2!1sru!2skz!4v1559558705133!5m2!1sru!2skz"></iframe>
+                <div class="row">
+                    <div class="col-12 line">
+                        <h2><span>Мы на карте</span></h2>
+                        <div class="hr"></div>
+                    </div>
+                    <div class="col-12 google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.5871460434005!2d74.93045753544351!3d46.795232121273386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x426f8d783fb70291%3A0x40b4a73f4eaf643a!2z0JfQvtC90LAg0L7RgtC00YvRhdCwICLQmNGA0YEi!5e1!3m2!1sru!2skz!4v1559558705133!5m2!1sru!2skz"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid footer-flex">
             <div class="logo"><span>Ирс</span></div>
-            <a href="tel:+77010000000"><img src="img/phone.svg" alt="Phone" class="icon"> +7 747 933 01 75 </a>
-            <a href="https://www.instagram.com/zona_otdyha_irs/" target="_blank"><img src="img/insta-white.svg" alt="Instagram" class="icon"></a>
+            <div class="phone-insta">
+                <a href="tel:+77010000000"><img src="img/phone.svg" alt="Phone" class="icon"> +7 747 933 01 75 </a>
+                <a href="https://www.instagram.com/zona_otdyha_irs/" target="_blank"><img src="img/insta-white.svg" alt="Instagram" class="icon"></a>
+            </div>
         </div>
     </footer>
     <div id="scrollToTop" class="bottom_top" onclick="goUp();"></div>
