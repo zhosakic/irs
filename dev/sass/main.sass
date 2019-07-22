@@ -1,7 +1,7 @@
 body
   font-family: 'Rubik', sans-serif
   box-sizing: border-box
-
+  overflow-x: hidden
 .container-fluid
   max-width: 1200px
 
@@ -228,6 +228,7 @@ body
 
 @media screen and (max-width: 991px)
   .rooms
+    padding-bottom: 20px
     .room-description
       p
         text-align: center
@@ -562,6 +563,15 @@ body
       background-color: #f4ddb1
       z-index: 5
 
+@media screen and (max-width: 991px)
+  .rest-zone
+    padding: 40px 0
+    .zone-block
+      display: none
+    .description
+      &:before
+        display: none
+
 //Beach
 .beach
   position: relative
@@ -608,6 +618,21 @@ body
     .beach14
       background-image: url("../img/beach14.jpg")
 
+@media screen and (max-width: 991px)
+  .beach
+    .slider-beach
+      width: 100%
+      height: calc(100vw * 2/3)
+      .image-item
+        height: calc(100vw * 2/3 - 15px)
+    .slider-nav
+      .image-item-prev
+        height: calc(100vw * 2/3 / 4)
+@media screen and (max-width: 991px)
+  .beach
+    .slider-nav
+      .image-item-prev
+        height: calc(100vw * 2/3 / 3)
 //Cafe
 .cafe
   padding: 50px 0
@@ -632,6 +657,18 @@ body
   .photo5
     background-image: url("../img/cafe4.jpg")
 
+@media screen and (max-width: 991px)
+  .cafe
+    .image-item
+      height: calc(100vw * 2/3 / 3)
+    .item-dish
+      height: calc(100vw * 2/3 / 2)
+@media screen and (max-width: 767px)
+  .cafe
+    .image-item
+      height: calc(100vw * 2/3)
+    .item-dish
+      height: calc(100vw * 2/3 / 2)
 
 //BeerBar
 .beer-bar
@@ -648,6 +685,11 @@ body
     background-image: url("../img/general_form.jpg")
   .photo3
     background-image: url("../img/beer_ice.jpeg")
+@media screen and (max-width: 991px)
+  .beer-bar
+    .image-item
+      height: calc(100vw * 2/3)
+
 
 //About
 .about
@@ -660,6 +702,11 @@ body
     background: url("../img/shamil.png")
     background-size: cover
     margin-right: 30px
+@media screen and (max-width: 425px)
+  .about
+    .photo-owner
+      width: 100px
+      height: 100px
 //Map
 .map
   padding: 50px 0
@@ -667,18 +714,45 @@ body
     width: 100%
     border: 0
     height: 450px
+@media screen and (max-width: 991px)
+  .map
+    padding: 15px 0
+    iframe
+      height: calc(100vw * 2/3)
 
 //Footer
 .footer
   background-color: #615f5f
   padding: 20px 0
+  .footer-flex
+    display: flex
+    justify-content: space-between
+  .logo
+    flex-basis: 40%
+  .phone-insta
+    flex-basis: 60%
+    text-align: end
   .icon
     height: 50px
-    padding-right: 30px
+    margin: 0 15px
   a
     text-decoration: none
     color: white
     font-size: 30px
+
+@media screen and (max-width: 767px)
+  .footer
+    .footer-flex
+      display: block
+    .logo
+      margin-bottom: 20px
+      width: 100%
+    .phone-insta
+      text-align: center
+    .icon
+      height: 22px
+    a
+      font-size: 22px
 
 
 //Button top
@@ -710,6 +784,11 @@ body
     margin: auto
   &:hover:after
     color: white
+
+@media screen and (max-width: 767px)
+  .bottom_top
+    bottom: 50px
+    right: 10px
 
 
 //Modal
@@ -757,6 +836,25 @@ body
         color: #fff
         background-color: #A36F1B
 
+
+// Media for all section
+
 @media screen and (max-width: 600px)
   .input-form
     padding: 0
+
+@media screen and (max-width: 767px)
+  h3
+    font-size: 18px
+  .head-line
+    h2
+      span
+        font-size: 18px
+    .line
+      margin-bottom: 15px
+      padding: 0
+      h2
+        span
+          padding: 0
+      .hr
+        display: none
