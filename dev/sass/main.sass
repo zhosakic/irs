@@ -5,6 +5,37 @@ body
 .container-fluid
   max-width: 1200px
 
+.picture-bg
+  .button-mobile
+    display: none
+@media screen and (min-width: 991px)
+  .picture-bg
+    .button-desktop
+      display: block
+@media screen and (max-width: 991px)
+  .picture-bg
+    .button-desktop
+      display: none
+    .button-mobile
+      display: block
+
+.sliders
+  .description
+    .button-mobile
+      display: none
+@media screen and (min-width: 991px)
+  .sliders
+    .description
+      .button-desktop
+        display: block
+@media screen and (max-width: 991px)
+  .sliders
+    .description
+      .button-desktop
+        display: none
+      .button-mobile
+        display: block
+
 //Header
 .header
   display: flex
